@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newton College 
+    Student Admission Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Newton College Student Admission Portal</h1>
+  <h2>Welcome to the Online Admission Form</h2>
+
+  <img src="college.jpg" alt="College Building">
+
+  <p class="intro">
+    Please fill in your details accurately to apply for admission to your preferred course.
+  </p>
+
+  <hr>
+
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contact">Contact Number:</label>
+    <input type="number" id="contact" name="contact" required>
+
+    <label>Gender:</label>
+    <div class="gender-options">
+      <input type="radio" id="male" name="gender" value="male"> Male
+      <input type="radio" id="female" name="gender" value="female"> Female
+      <input type="radio" id="other" name="gender" value="other"> Other
+    </div>
+
+    <label for="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="">--Select--</option>
+      <option value="btech">B.Tech</option>
+      <option value="bca">BCA</option>
+      <option value="bsc">B.Sc</option>
+    </select>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address"></textarea>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo" accept="image/*">
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <footer>
+    © 2025 Newton College. All rights reserved.
+  </footer>
+</body>
+</html>
